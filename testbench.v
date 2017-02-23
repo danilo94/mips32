@@ -45,6 +45,28 @@ end
 */
 
 
+// Test Case 3 ( Reading and Writting Register Memory )
+
+
+initial begin
+rst=1;
+rs=0;
+ra=1;
+we=2;
+clk=0;
+pcJump=128;
+write=0;
+#2 rst = 0;
+write = 1;
+
+#2 write =0;
+rs=2;
+
+#1 rs=0;
+
+
+
+end 
 
 
 
@@ -59,8 +81,9 @@ initial
 #100 $finish;
 
 initial begin
-  $monitor("timestamp: %d clk: %d Pc: %d isJump: %d rst: %d ",$time,clk,newPc,isJump,rst);
-
+  //PC
+ // $monitor("timestamp: %d clk: %d Pc: %d isJump: %d rst: %d ",$time,clk,newPc,isJump,rst);
+ $monitor("timestamp: %d clk: %d rs: %d ra: %d we: %d write: %d Data rs: %d rst: %d",$time,clk,rs,ra,we,write,readDatars,rst);
 
 end
 
