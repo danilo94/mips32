@@ -1,11 +1,11 @@
 module Registers(input clk,
 input [4:0] rs,
 input [4:0] ra,
-input [4:0] wr,
+input [4:0] we,
 input [31:0] writeData,
 input write,
-output [31:0]readDatars,
-output [31:0]readDatara);
+output wire [31:0]readDatars,
+output wire [31:0]readDatara);
 
 
 reg [31:0] registers[0:31];
@@ -13,6 +13,17 @@ reg [31:0] registers[0:31];
 
 
 
+
+always @(posedge clk) begin
+
+
+
+
+end
+
+
+assign readDatars=registers[rs];
+assign readDatara=registers[ra];
 
 
 
