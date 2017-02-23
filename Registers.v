@@ -13,13 +13,15 @@ reg [31:0] registers[0:31];
 
 
 
-
 always @(posedge clk) begin
 
+	if (write) begin
+	  registers[we] = writeData;
+	end
 
 
+end 
 
-end
 
 
 assign readDatars=registers[rs];
