@@ -25,8 +25,9 @@ To implement and debug mips core, we used these tools:
 
 
 # Todo
-- Implements signal extend unity
+- signal extend unity (16 to 32 bits)
 - Shifters
-- Implements ALU
+- Control
+- ALU
 - Define a interface between mips and memory (Data memory and program memory)
 - Connect all modules
