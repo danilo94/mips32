@@ -12,7 +12,6 @@ This project is a simple MIPS32 bits core described in Verilog to help students 
 - ADD/SUB - Arithmetical Operations
 
 - AND,OR,XOR,NOT - Logical Operations
-- Jump and Branch Instructions
 
 
 # Tools
