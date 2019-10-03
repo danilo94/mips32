@@ -30,3 +30,9 @@ To implement and debug mips core, we used these tools:
 - Multiplexers
 - Define a interface between mips and memory (Data memory and program memory)
 - Connect all modules
+
+
+#done
+
+- Finally i'm created a folder only for source code :)
+
